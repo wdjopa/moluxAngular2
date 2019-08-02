@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import * as firebase from 'firebase';
 import { User } from '../models/User.model';
 import { UserService } from './user.service';
 import { Router } from '@angular/router';
