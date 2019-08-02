@@ -1,6 +1,6 @@
 :host{
     font-family: 'Macondo Swash Caps', cursive;
-    /* background-image: url("Images/background.png"); */
+    background-image: url("../../assets/Images/background.png");
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -10,7 +10,7 @@
     position: absolute;
 	background: rgba(94,82,71,0.84);
     background: linear-gradient(135deg,#7C3A00, #CF8442);
-    /* opacity: 0.3; */
+    opacity: 0.8;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -87,6 +87,12 @@ header{
 .form .btns{
     text-align: center;
 }
+.form .btns hr{
+    margin: 1rem;
+    height: 1px;
+    border: none;
+    background: linear-gradient(90deg, transparent, white, transparent);
+}
 .form .btns button{
     background: #2D9CDB;
     border-radius: 4px;
@@ -96,7 +102,22 @@ header{
     color: white;
     font-family: 'Capriola';
 }
-
+.form .btns button:disabled{
+    background: #AAA;
+    color: #888;
+}
+.form-row{
+    max-width: 70vw;
+}
+.form-row .alert{
+    border: 2px solid #7C3A00;
+    background: #ffffff88;
+    border-radius: 2px;
+    margin-top: 2rem;
+    padding: 0.41rem;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 @media screen and (max-width: 992px) {
     header {

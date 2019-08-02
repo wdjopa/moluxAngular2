@@ -9,6 +9,7 @@ import { AuthService } from './services/auth.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
+import { UserService } from './services/user.service';
 
 
 const appRoutes: Routes = [
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    AuthService
+    AuthService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

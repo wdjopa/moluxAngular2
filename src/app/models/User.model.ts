@@ -1,18 +1,25 @@
 export class User {
+
+  public tel: string;
+  public score: number;
+  public points: number;
+  public parties: number;
+
+  constructor(
+    public pseudo: string,
+    public password: string
+  ) { }
   
-    public password: string;
-    constructor(
-        public pseudo: string,
-        public tel: string
-    ) {}
-    getPassword(){
-      return this.password;
-    }
-    getPseudo(){
-      return this.pseudo;
-    }
-    getTel(){
-      return this.tel;
-    }
-  
+  getPassword() {
+    return this.password;
   }
+  
+  getPseudo() {
+    return this.pseudo;
+  }
+  
+  getTel() {
+    return this.tel;
+  }
+
+}
